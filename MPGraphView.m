@@ -126,10 +126,10 @@
 
 - (CGPoint)pointAtIndex:(NSInteger)index{
 
-    CGFloat space=(self.frame.size.width)/(points.count+1);
+    CGFloat space=(self.frame.size.width)/(points.count - 1);
 
     
-    return CGPointMake(space+(space)*index,self.height-((self.height-PADDING*2)*[[points objectAtIndex:index] floatValue]+PADDING));
+    return CGPointMake((space)*index,self.height-((self.height-PADDING*2)*[[points objectAtIndex:index] floatValue]));
 }
 
 
@@ -146,6 +146,7 @@
     ((CAShapeLayer *)self.layer).fillColor=[UIColor clearColor].CGColor;
     ((CAShapeLayer *)self.layer).strokeColor = self.graphColor.CGColor;
     ((CAShapeLayer *)self.layer).path = [self graphPathFromPoints].CGPath;
+    ((CAShapeLayer *)self.layer).lineWidth = self.lineWidth ? self.lineWidth : 1;
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.fromValue = @0;
