@@ -59,13 +59,13 @@
     
     
     graph4=[[MPGraphView alloc] initWithFrame:graph3.frame];
-    graph4.values=@[@2.5,@2.6,@2.8,@3.8,@3.2,@3.6,@4,@4.5,@2.6,@2.8,@3,@2.8,@3.2];
-    graph4.fillColors=@[[UIColor orangeColor],[UIColor colorWithRed:1.000 green:0.827 blue:0.000 alpha:1.000]];
-    graph4.graphColor=[UIColor redColor];
-    graph4.curved=YES;
+    graph4.values=@[@2, @3, @6, @4];
+    graph4.fillColors=@[[UIColor orangeColor],[UIColor orangeColor]];
+    graph4.graphColor=[UIColor greenColor];
+//    graph4.curved=YES;
     [self.view addSubview:graph4];
     
-    [self.view addSubview:graph3];
+//    [self.view addSubview:graph3];
     
     
     graph5=[MPPlot plotWithType:MPPlotTypeBars frame:CGRectMake(0, 360, 320, 150)];
