@@ -34,6 +34,17 @@ asfasdmport "MPBarsGraphView.h"
             min=val;
         }
         
+        asdf;lkajs
+        asdflkasd
+        asdfas
+        dfasd
+        fasd
+        falsesdf
+        asdff
+        asdfdfa
+        selfdfa
+        adfs;
+        
     }
     
     
