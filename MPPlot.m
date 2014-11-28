@@ -8,7 +8,10 @@
 
 #import "MPPlot.h"
 #import "MPGraphView.h"
-#import "MPBarsGraphView.h"
+#i
+
+
+asfasdmport "MPBarsGraphView.h"
 
 @implementation MPPlot
 
